@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carambar & co - Blagues</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="container">
+    <!-- Btn en haut -->
+    <button id="btn-liste" class="btn btn-liste">Voir la liste des blagues</button>
+    <button id="btn-ajout" class="btn btn-liste">Ajouter une blague</button>
+
+    <h1>Carambar & co</h1>
+
+    <!-- Blague aléatoire -->
+    <section id="blague-section">
+      <button id="btn-afficher" class="btn">Afficher une blague</button>
+      <p id="question" class="blague-question"></p>
+      <button id="btn-reponse" class="btn btn-secondary" disabled>Voir la réponse</button>
+      <p id="reponse" class="blague-reponse" style="display:none;"></p>
+    </section>
+
+    <hr />
+  </main>
+
+  <!-- Modale liste blagues -->
+  <div id="modal-liste" class="modal">
+    <div class="modal-content">
+      <span id="modal-close-liste" class="modal-close">&times;</span>
+      <h2>Liste des blagues</h2>
+      <ul id="liste-blagues"></ul>
+    </div>
+  </div>
+
+  <!-- Modale ajout blague -->
+  <div id="modal-ajout" class="modal">
+    <div class="modal-content">
+      <span id="modal-close-ajout" class="modal-close">&times;</span>
+      <h2>Ajouter une blague</h2>
+      <form id="form-ajout">
+        <label for="input-question">Question :</label><br />
+        <textarea id="input-question" rows="2" required></textarea><br />
+
+        <label for="input-reponse">Réponse :</label><br />
+        <textarea id="input-reponse" rows="2" required></textarea><br />
+
+        <button type="submit" class="btn">Ajouter la blague</button>
+      </form>
+      <p id="message-ajout"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
