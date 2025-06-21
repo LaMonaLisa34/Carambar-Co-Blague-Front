@@ -33,7 +33,8 @@ Site web frontend simple pour afficher des blagues aléatoires via l’API backe
 
 1. Cloner le dépôt  
 
-git clone https://github.com/LaMonaLisa34/Carambar-Co-Blague-Front.git
+git clone https://github.com/LaMonaLisa34/Carambar-Co-Blague-Front.git  
+
 cd Carambar-Co-Blague-Front  
 
 ## Liens utiles
